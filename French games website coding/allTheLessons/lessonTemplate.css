@@ -1,0 +1,61 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.left{
+    display:inline-block
+}
+.right{
+    display:inline-block; 
+    float: right;
+}
+
+
+.sidebar {
+    width: 175px;
+    position: fixed;
+    z-index: 1;
+    top: 149px;
+    height:100%;
+    background: black;
+    overflow-x: hidden;
+    padding: 8px 0;
+    opacity: 0.85;
+    border-top:11px solid #1b467e;
+    border-right: 11px solid #1b467e;
+  }
+  
+  .sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+  }
+  
+  .sidebar a:hover {
+    color: #064579;
+  }
+  .main{
+    height:100%;
+    width:90.3%;
+    position:fixed;
+    margin-left: 186px; /* Same width as the sidebar + left position in px */
+    background: white;
+    padding: 8px 0;
+    opacity:0.85;
+    border-top:11px solid #1b467e;
+  }
+
+
+/* Change styles for span and cancel button on extra small screens */
+ @media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
