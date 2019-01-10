@@ -1,47 +1,91 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="French Website Home Page">
-    <meta name="keywords" content="HTML,CSS,JavaScript">
-    <meta name="author" content="Sonal Sharma">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>French Games and Stuff</title>
+<style>
+body{
+    background-image: url("french.jpg"); background-repeat: no-repeat; background-size:cover
+}
 
-    <link href="lessonTemplate.css" rel="stylesheet" type="text/css" />
-  </head>
-  
-  <body onload="start()" style = "background-image: url('bckgrnd.png'); background-repeat: no-repeat; background-size: 100%;">
-  
-  <!-- Heading-->
-    <div"> 
-        <div class = "left"> 
-            <h1 style = "font-size:60px; color:white;">  French Games </h1> 
-        </div>
+div.relative {
+  position: relative;
+  left: 300px;
+}
+</style>
 
-        <div class = "right">
-            <h1 style = "color:white;" id="date" ></h1>
-            <h1 style = "color:white;" id="txt"></h1>
-        </div>
-    </div>
+<div class="relative">
+    <h1>Present Tense of Regular Verbs</h1>
+</div>
 
+
+<div class="relative">
+    <pre>
+    Verbs that end in -er
+    -take the -er off the ending and add the following endings:
+
+    Je		-e			Nous		-ons
+    Tu		-es			Vous		-ez
+    il/elle/on	-e			ils/elles	-ent
+
+    Je: Parler -  Parler - Parl + e = Parle	                Nous: Parler -  Parler - Parl + ons = Parlons
+    Tu: Parler -  Parler - Parl + es = Parles		        Vous: Parler -  Parler - Parl + ez = Parlez
+    il/elle/on: Parler -  Parler - Parl + e = Parle             ils/elles:Parler -  Parler - Parl + ent = Parlent
+    </pre>
+</div>
+
+<div class="relative">
+    <pre>
+    Verbs that end in -re
+    -take the -re off the ending and add the following endings:
+
+    Je		-s			Nous		-ons
+    Tu		-s			Vous		-ez
+    il/elle/on	-			ils/elles	-ent
+
+    Je: Perdre-  Perdre- Perd + s = Perds		Nous: Perdre- Perdre- Perd + ons =Perdons
+    Tu: Perdre-  Perdre- Perd + s = Perds		Vous: Perdre-  Perdre- Perd + ez = Parlez
+    il/elle/on: Perdre-  Perdre- = Perd			ils/elles:Perdre- Perdre- Perd + ent = Perdent
+    </pre>
+</div>
+
+<div class="relative">
+    <pre>
+    Verbs that end in -ir
+    -take the -ir off the ending and add the following endings:
     
-    <div>
-        <div class = "sidebar">
-            <h2 style = "color:white; text-align: center;"> <i>Navigation</i></h2>
-            <a href = main.html>Home</a>
-            <a href="games.html">Games</a>
-            <a href="logs.html">Logs</a>
-            <a href="settings.html">Settings</a>
-            <a href = "index.html"> Log Out</a>
-        </div>
+    Je		-is			Nous		-issons
+    Tu		-is			Vous		-issez
+    il/elle/on	-it			ils/elles	-issent
+    
+    Je: Batir -  Batir- Bat + is = Batis			Nous: Batir- Batir- Bat+ issons = Batissons
+    Tu: Batir -  Batir- Bat + is = Batis			Vous: Batir- Batir- Bat+ issez = Batissez
+    il/elle/on: Batir -  Batir- Bat + it = Batit		ils/elles:Batir - Batir- Bat+ issent = Batissent
+    </pre>
 
-        <div class="main">
-            <h1 style = "text-align: center;"> Games! </h1>
-        </div>  
-    </div>
+</div>
 
+<div class="relative">
+    <h2>Practice</h2>
+    <p>Which is the correct form of the verb Fondre for Je in -re?</p>
+    <form>
+        <input type="radio" name="btn" value="Fonde"  onclick="myFunction2()" > Fonde<br>
+        <input type="radio" name="btn" value="Fonds" onclick="myFunction()"> Fonds<br>
+        <input type="radio" name="btn" value="Fondis" onclick="myFunction2()"> Fondis
+        
+        <p id="demo"></p>
+        <script>
+        function myFunction() {
+            var x = "That's Correct"
+            document.getElementById("demo").innerHTML = x; 
+        }
 
-  <script src="script.js"></script>
-  </body>
+        function myFunction2() {
+            var y = "That's Incorrect"
+            document.getElementById("demo").innerHTML = y; 
+        }
+
+        </script>
+    </form>
+
+</div>
+
+</body>
 </html>
