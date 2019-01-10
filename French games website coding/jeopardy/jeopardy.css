@@ -1,0 +1,27 @@
+/* CSS Style for the index (login page) */
+/* Some of the code was used from https://www.w3schools.com/howto/howto_css_login_form.asp */
+body, html{
+    height: 100%;
+    margin: 0;
+  }
+
+table{
+    width:50%;
+    position:fixed;
+    margin-left:22%;
+    background-color: black;
+}
+table, th, td {
+    border: 10px solid black;
+    border-collapse: collapse;
+    padding:10px;
+  }
+  th, td {
+    text-align: center;
+  }
+  #t01 th {
+    padding:15px;
+    background-color: blue;
+    color: white;
+  }
+  
