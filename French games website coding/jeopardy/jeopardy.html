@@ -7,18 +7,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>French Games and Stuff</title>
         
-        <!--https://www.w3schools.com/howto/howto_css_modals.asp-->
+
         <!-- Link to main CSS file -->
         <link href="jeopardy.css" rel="stylesheet" type="text/css" />
       </head>
 <body style = "background-image: url('jeopardywallpaper3.png'); background-repeat: no-repeat; background-size: 100%;">
-   
-    <div>
-        <h1 style = "color: white; font-size: 80px;"> Jeopardy</h1>
-    </div>
 
-    <div class="main">
-        <!-- Table for links -->
+        <h1 style = "font-size: 40px; color: white; text-align: center;"> Jeopardy: ER, IR and RE Regular Verb Conjugations </h1>
+        <h2 style = "font-size: 30px; color: white; text-align: center;">  Points: $0</h2>
+    <div>
         <table id="t01">
             <tr>
                 <th> <h2>Category 1</h2></th>
@@ -26,8 +23,10 @@
                 <th> <h2>Category 3</h2></th>
                 <th> <h2>Category 4</h2></th>
                 <th> <h2>Category 5</h2></th>
+                <th> <h2>Category 6</h2></th>
             </tr>
             <tr>
+                <td><button class="200" id="myBtn"><img src = "200btn.png" /></button></td>
                 <td><button class="200"><img src = "200btn.png" /></button></td>
                 <td><button class="200"><img src = "200btn.png" /></button></td>
                 <td><button class="200"><img src = "200btn.png" /></button></td>
@@ -40,6 +39,7 @@
                 <td><button class="200"><img src = "400btn.png" /></button></td>
                 <td><button class="200"><img src = "400btn.png" /></button></td>
                 <td><button class="200"><img src = "400btn.png" /></button></td>
+                <td><button class="200"><img src = "400btn.png" /></button></td>
             </tr>
             <tr>
                 <td><button class="200"><img src = "600btn.png" /></button></td>
@@ -47,6 +47,7 @@
                 <td><button class="200"><img src = "600btn.png" /></button></td>
                 <td><button class="200"><img src = "600btn.png" /></button></td>
                 <td><button class="200"><img src = "600btn.png" /></button></td>
+                <td><button class="200"><img src = "600btn.png" /></button></td>
             </tr>
             <tr>
                 <td><button class="200"><img src = "800btn.png" /></button></td>
@@ -54,8 +55,10 @@
                 <td><button class="200"><img src = "800btn.png" /></button></td>
                 <td><button class="200"><img src = "800btn.png" /></button></td>
                 <td><button class="200"><img src = "800btn.png" /></button></td>
+                <td><button class="200"><img src = "800btn.png" /></button></td>
             </tr>
             <tr>
+                <td><button class="200"><img src = "1000btn.png" /></button></td>
                 <td><button class="200"><img src = "1000btn.png" /></button></td>
                 <td><button class="200"><img src = "1000btn.png" /></button></td>
                 <td><button class="200"><img src = "1000btn.png" /></button></td>
@@ -64,5 +67,23 @@
             </tr>
     </div> 
 
+    
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p> Question Here</p>
+          <form >
+            Answer:<br>
+            <input type="text">
+            <br>
+            <input type="submit" value="Submit">
+          </form> 
+        </div>
+      
+      </div>
+
+      <script src="jeopardy.js"></script>
 </body>
 </html>
