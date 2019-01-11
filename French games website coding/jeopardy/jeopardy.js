@@ -19,3 +19,15 @@ window.onclick = function(event) {
 }
 
 
+function eRVerbs(){
+  
+  var number = Math.floor(Math.random() * 4);
+  var questions = ["Parler, Je", "Nager, Elle", "Manger, Nous",
+   "Nettoyer, Tu", "Lever, Vous"];
+
+   document.getElementById("question").innerHTML = questions[number];
+}
+
+function start(){
+  eRVerbs();
+}

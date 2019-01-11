@@ -17,7 +17,6 @@ body, html{
 /* Table stuff */
 table{
     width:50%;
-    position:fixed;
     margin-left:14%;
     background-color: black;
 }
@@ -85,4 +84,25 @@ table, th, td {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 1500px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    table{
+      margin-left:5%;
+      height:80%;
+    }
+    table, th, td {
+      border: 5px solid black;
+      border-collapse: collapse;
+      padding:5px;
+    }
+    #t01 th{
+      padding:10px;
+      background-color: blue;
+      color: white;
+    }
   }

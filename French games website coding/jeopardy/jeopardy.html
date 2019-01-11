@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -11,14 +12,14 @@
         <!-- Link to main CSS file -->
         <link href="jeopardy.css" rel="stylesheet" type="text/css" />
       </head>
-<body style = "background-image: url('jeopardywallpaper3.png'); background-repeat: no-repeat; background-size: 100%;">
+<body style = "background-image: url('jeopardywallpaper3.png'); background-repeat: no-repeat; background-size: 100%;" onload = "start()">
 
         <h1 style = "font-size: 40px; color: white; text-align: center;"> Jeopardy: ER, IR and RE Regular Verb Conjugations </h1>
         <h2 style = "font-size: 30px; color: white; text-align: center;">  Points: $0</h2>
     <div>
         <table id="t01">
             <tr>
-                <th> <h2>Category 1</h2></th>
+                <th> <h2>ER Verbs</h2></th>
                 <th> <h2>Category 2</h2></th>
                 <th> <h2>Category 3</h2></th>
                 <th> <h2>Category 4</h2></th>
@@ -26,12 +27,12 @@
                 <th> <h2>Category 6</h2></th>
             </tr>
             <tr>
+                <td><button id="myBtn"><img src = "200btn.png" /></button></td>
+                <td><button id="myBtn"><img src = "200btn.png" /></button></td>
                 <td><button class="200" id="myBtn"><img src = "200btn.png" /></button></td>
-                <td><button class="200"><img src = "200btn.png" /></button></td>
-                <td><button class="200"><img src = "200btn.png" /></button></td>
-                <td><button class="200"><img src = "200btn.png" /></button></td>
-                <td><button class="200"><img src = "200btn.png" /></button></td>
-                <td><button class="200"><img src = "200btn.png" /></button></td>
+                <td><button class="200" id="myBtn"><img src = "200btn.png" /></button></td>
+                <td><button class="200" id="myBtn"><img src = "200btn.png" /></button></td>
+                <td><button class="200" id="myBtn"><img src = "200btn.png" /></button></td>
             </tr>
             <tr>
                 <td><button class="200"><img src = "400btn.png" /></button></td>
@@ -73,7 +74,7 @@
         <!-- Modal content -->
         <div class="modal-content">
           <span class="close">&times;</span>
-          <p> Question Here</p>
+          <h1 id="question" ></h1>
           <form >
             Answer:<br>
             <input type="text">
